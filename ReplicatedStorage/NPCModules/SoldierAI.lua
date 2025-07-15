@@ -27,6 +27,9 @@ function SoldierAI.newSoldier(name, role)
     rootPart.Anchored = false
     rootPart.Parent = character
 
+    -- Set PrimaryPart so scripts like SetPrimaryPartCFrame work properly
+    character.PrimaryPart = rootPart
+
     return character
 end
 
