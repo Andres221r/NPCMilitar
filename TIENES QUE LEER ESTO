@@ -1,0 +1,23 @@
+# Instrucciones para Importar el Sistema Militar en Roblox Studio
+
+1. **Estructura de Carpetas**
+   - Crea las carpetas `ReplicatedStorage`, `ServerScriptService` y `StarterPlayerScripts` en el panel *Explorer* si aún no existen.
+   - Dentro de `ReplicatedStorage` crea una carpeta llamada `NPCModules` y agrega un *ModuleScript* llamado **SoldierAI**.
+   - En `ServerScriptService` crea un *Script* llamado **SoldierSpawner**.
+   - En `StarterPlayer > StarterPlayerScripts` crea un *LocalScript* llamado **SoldierClient**.
+
+2. **Contenido de los Scripts**
+   - Copia el contenido de `ReplicatedStorage/NPCModules/SoldierAI.lua` en el ModuleScript **SoldierAI**.
+   - Copia el contenido de `ServerScriptService/SoldierSpawner.server.lua` en el script **SoldierSpawner**.
+   - Copia el contenido de `StarterPlayerScripts/SoldierClient.lua` en el LocalScript **SoldierClient**.
+
+3. **Prueba Rápida**
+   - Ejecuta el juego en *Play*.
+   - Se generará un escuadrón de tres soldados en las posiciones indicadas.
+   - Al aparecer los soldados comenzarán a patrullar los puntos definidos en el cliente.
+
+4. **Notas Importantes**
+   - Este es un ejemplo básico para ilustrar la estructura. Se debe expandir con funciones de combate, jerarquías y eventos para un sistema más complejo.
+   - Asegúrate de que todos los scripts tengan permisos adecuados y que no haya otro script con errores que bloquee la ejecución.
+   - Roblox Studio debe estar actualizado para poder utilizar PathfindingService sin inconvenientes.
+
